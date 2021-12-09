@@ -1,10 +1,11 @@
 require('./bootstrap');
-
 window.Vue = require('vue');
 import vuetify from './vuetify';
-Vue.component('app-container', require('./components/AppContainer.vue').default);
-
+import route from './router';
+import App from './components/App.vue'
 const app = new Vue({
     el: '#app',
-    vuetify
+    router:route,
+    vuetify,
+    render:h=>h(App)
 });
