@@ -12,9 +12,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::prefix('api')->group(function () {
+    Route::get('getInfo','HomeController@getInfo');
+});
+// Route::get('api/getInfo','HomeController@getInfo');
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/{any}', 'HomeController@index')->where('any', '.*');
 
-Route::get('/','HomeController@index');
+
