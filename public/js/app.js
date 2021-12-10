@@ -100357,7 +100357,13 @@ __webpack_require__.r(__webpack_exports__);
   path: "/",
   name: "test",
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ../pages/Test.vue */ "./resources/js/pages/Test.vue"));
+    return __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ../pages/Test.vue */ "./resources/js/pages/Test.vue"));
+  }
+}, {
+  path: "/signature",
+  name: "signature",
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ../pages/Signature.vue */ "./resources/js/pages/Signature.vue"));
   }
 }]);
 
