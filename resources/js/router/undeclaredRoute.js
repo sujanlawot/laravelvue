@@ -1,12 +1,16 @@
 export default [
+
     {
         path:"/",
         name:"test",
-        component:()=>import("../pages/Test.vue"),
+        component:()=>import("../components/layouts/undeclaredapp.vue"),
+        children:[
+            {
+                path:"/signature",
+                name:"signature",
+                component:()=>import("../pages/Signature.vue"),
+            }
+        ]
     },
-    {
-        path:"/signature",
-        name:"signature",
-        component:()=>import("../pages/Signature.vue"),
-    }
+
 ]
