@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::prefix('api')->group(function () {
-    Route::get('getInfo','HomeController@getInfo');
+    Route::resource('user', UserController::class);
 });
 // Route::get('api/getInfo','HomeController@getInfo');
 

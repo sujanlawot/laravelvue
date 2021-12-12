@@ -100354,6 +100354,19 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ([{
+  path: "/s",
+  name: "signature",
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! @/js/pages/Signature.vue */ "./resources/js/pages/Signature.vue"));
+  }
+}, {
+  path: "/user",
+  name: "user",
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! @/js/pages/User/Index.vue */ "./resources/js/pages/User/Index.vue"));
+  } //
+
+}, {
   path: "/",
   name: "test",
   component: function component() {
